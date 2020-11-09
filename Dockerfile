@@ -10,4 +10,9 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY Gemfile* /app/
+COPY package.json /app/package.json
+COPY yarn.lock /app/yarn.lock
 RUN bundle install
+
+COPY babel.config.js /app/babel.config.js
+RUN yarn install

@@ -7,7 +7,7 @@
 
 recipe_two_ingredients:
   name: A two ingredients recipe
-  author: Ludovic
+  author: John
   author_tip: a useful tip for two ingredients
   budget: 15 euros
   difficulty: "8"
@@ -19,7 +19,7 @@ recipe_two_ingredients:
 
 recipe_four_ingredients:
   name: A four ingredients recipe
-  author: Ludovic
+  author: Matt
   author_tip: a useful tip for four ingredients
   budget: 19 euros
   difficulty: "9"

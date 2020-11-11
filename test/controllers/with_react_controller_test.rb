@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class WithReactControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get react page (no service side rendering)" do
+    get with_react_url
+    assert_response :success
+  end
 end

@@ -49,3 +49,51 @@
    width: 100%;
    opacity: 0.4;
  }
+
+ h1.standard {
+   text-align: center;
+   font-size: 40px;
+   color: #293241;
+ }
+
+ .ingredient_selection {
+   margin-top: 50px;
+   text-align: center;
+ }
+
+ .ingredient_selection label {
+   font-weight: 600;
+   color: #293241;
+   padding-right: 30px;
+   vertical-align: top;
+ }
+
+ .ingredient_selection .input_area {
+   display: inline-block;
+   max-width: 500px;
+   width: 100%;
+ }
+
+ .ingredient_selection textarea {
+   width: 100%;
+   padding: 10px;
+ }
+
+ .ingredient_selection label {
+   font-size: 1.10rem;
+ }
+
+ .ingredient_selection .notice {
+   color: grey;
+   font-style: italic;
+ }
+
+ .ingredient_selection input[type="submit"] {
+   margin-top: 30px;
+   background-color: #293241;
+   color: #FFF;
+   font-size: 1.25rem;
+   border-radius: 0.3rem;
+   border: none;
+   padding: 10px 30px;
+ }

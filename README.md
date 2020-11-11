@@ -2,20 +2,20 @@
 ## Users Stories
 
 As an administrator,
-I want to seed the application with default receipts in the database,
-so the users cans look for them with the app
+I want to seed the application with default recipes in the database,
+So the users cans look for them with the app
 
 As a visitor,
-I want a way to save the ingredients I have,
-so the application know which receipts could be suggested
+I want a way to write the ingredients I have,
+So the application know which recipes could be suggested
 
 As a visitor,
-I want to see the receipts suggested for the ingredients I've filled,
-so I can select on of the receipts
+I want a liste of suggested recepts for the ingredients I've filled filled,
+So I can select one of them
 
 As a visitor,
-I want to select one receipt,
-so I can see the details and start to cook it
+I want to see the details of one recipe,
+So I can cook something with it
 
 ## Docker
 
@@ -49,7 +49,7 @@ seed database with example datas
 docker-compose run --rm web bundle exec rake db:seed
 ```
 
-run the application
+run the application with the command bellow before browse http://127.0.0.1:3000/
 
 ```
 docker-compose up -d

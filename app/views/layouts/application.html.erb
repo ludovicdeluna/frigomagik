@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Frigomagik</title>
+    <title>Frigo Magic<%= yield(:title).then { |title| ": #{title}" unless title.empty? } %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

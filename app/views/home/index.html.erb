@@ -1,0 +1,15 @@
+<%- content_for :title, "Which ingredients?" -%>
+<h1 class="standard">Frigo Magik</h1>
+
+<div class="ingredient_selection">
+  <%= form_with do %>
+    <div>
+      <%= label_tag(:ingredients, "Ingredients:") %>
+      <div class="input_area">
+        <%= text_area_tag(:ingredients, nil, size: "24x6") %><br />
+        <div class="notice">Comma separated list of ingredients</div>
+      </div>
+    </div>
+    <%= submit_tag("search recipes") %>
+  <% end %>
+</div>

@@ -13,3 +13,17 @@
     <%= submit_tag("search recipes") %>
   <% end %>
 </div>
+
+<div class="result standard">
+  <%- if @recipes.empty? %>
+    <div style="text-align: center;">
+      <strong style="font-size: 25px;">No result</strong>
+    </div>
+  <%- else -%>
+    <ul>
+    <%- @recipes.each do |recipe| -%>
+      <li><%= recipe.name %></li>
+    <%- end -%>
+    </ul>
+  <%- end -%>
+</div>

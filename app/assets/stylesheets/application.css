@@ -97,3 +97,8 @@
    border: none;
    padding: 10px 30px;
  }
+
+ .result.standard {
+   max-width: 500px;
+   margin: 30px auto 0;
+ }

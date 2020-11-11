@@ -4,4 +4,4 @@
 Ingredient.delete_all
 Recipe.delete_all
 
-RecipeLoader.new.load_file(Rails.root.join("db", "seeds_recipes.json"))
+RecipeLoaderService.new.load_file(Rails.root.join("db", "seeds_recipes.json"))

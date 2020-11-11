@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require "json"
 
-class RecipeLoader
+class RecipeLoaderService
   def load_file(path)
     ActiveRecord::Base.transaction do
       File.

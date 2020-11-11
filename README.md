@@ -2,7 +2,7 @@
 ## Users Stories
 
 As an administrator,
-I want to load the receipts in the database,
+I want to seed the application with default receipts in the database,
 so the users cans look for them with the app
 
 As a visitor,
@@ -19,22 +19,71 @@ so I can see the details and start to cook it
 
 ## Docker
 
-The Docker file is based on Ubuntu and create a Postgresql 12.4 image with
-Ruby 2.7.x and Git. Heroku CLI will be installed (snap app).
+The Docker file is based on Debian and prepare environnement with:
+- Ruby 2.7.x
+- Git command
+- Heroku CLI
+
+The docker-compose file is set to start Postgresql 12.4 on Alpine image.
+
+You should use Docker + Docker-compose to play with this rails app, but
+it's not mandatory.
+
+### Commands to run (with docker-compose)
+
+prepare the application:
+
+```
+docker-compose run --rm web bundle exec rake db:prepare
+```
+
+run the tests
+
+```
+docker-compose run --rm web bundle exec rails test
+```
+
+seed database with example datas
+
+```
+docker-compose run --rm web bundle exec rake db:seed
+```
+
+run the application
+
+```
+docker-compose up -d
+```
+
+get logs of running application
+
+```
+docker-compose logs -f web
+```
+
+stop the application, remove web & db containers
+
+```
+docker-compose down
+```
+
+### Erase all data for Dev
+
+Remove database with rake command:
+
+```
+docker-compose run --rm web bundle exec rake db:drop
+```
+
+Or remove manually all files while containers are down by removing the `tmp/db`
+folder (should need _root_ privileges: `sudo rm -r tmp/db`).
 
 ## Heroku
 
 Configuration here
 
-## Docker
 
-You need Docker and Docker-Compose for this project.
-
-Run into a container
-
-```shell
-docker-compose run --rm web bash
-```
+---
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

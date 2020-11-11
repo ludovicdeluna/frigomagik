@@ -1,0 +1,30 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+recipe_two_ingredients:
+  name: A two ingredients recipe
+  author: Ludovic
+  author_tip: a useful tip for two ingredients
+  budget: 15 euros
+  difficulty: "8"
+  people_quantity: 5
+  cook_time: "15 minutes"
+  prep_time: "6 minutes"
+  total_time: "19 minutes"
+  image_url: "an_image_url_for_two_ingredients_receipt"
+
+recipe_four_ingredients:
+  name: A four ingredients recipe
+  author: Ludovic
+  author_tip: a useful tip for four ingredients
+  budget: 19 euros
+  difficulty: "9"
+  people_quantity: 4
+  cook_time: "10 minutes"
+  prep_time: "9 minutes"
+  total_time: "20 minutes"
+  image_url: "an_image_url_for_four_ingredients_receipt"

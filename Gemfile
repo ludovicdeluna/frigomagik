@@ -48,6 +48,8 @@ group :test do
   # gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   # gem 'webdrivers'
+  # Ludovic: I prefere to have all features of minitest
+  gem "minitest-rails", "~> 6.0", ">= 6.0.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

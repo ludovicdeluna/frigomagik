@@ -1,2 +1,23 @@
-<h1>Recipes#show</h1>
-<p>Find me in app/views/recipes/show.html.erb</p>
+<h1><%= @recipe.name %></h1>
+
+<% unless @recipe.image_url.blank? -%>
+ <image src="<%= @recipe.image_url %>"/>
+ <hr>
+<%- end -%>
+
+[<%= link_to("Back to search", root_path) %>]
+<br />
+<br />
+
+<ul>
+  <li>Author: <%= @recipe.author %></li>
+  <li>Budget: <%= @recipe.budget %></li>
+</ul>
+
+<h2>Preparation</h2>
+
+<ul>
+  <%- @recipe.ingredients.each do |ingredient| -%>
+    <li><%= ingredient.qte_name %></li>
+  <%- end -%>
+</ul>

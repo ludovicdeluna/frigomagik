@@ -7,4 +7,8 @@ class RecipesController < ApplicationController
     @recipes = RecipeFinderService.new.can_cook_with(ingredients + %w(sel poivre huile))
     @ingredients = ingredients.join(", ")
   end
+
+  def show
+    @recipe = Recipe.find(params[:id])
+  end
 end

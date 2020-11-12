@@ -10,6 +10,11 @@ This is a little challange. The baseline is:
 > I'm waiting friends for dinner but I don't have time for shopping. Knowing
 > what I have in the fridge, what can I cook.
 
+<video controls width="550">
+<source src="./frigomagik_usecase.mp4" type="video/mp4">
+</video>
+
+
 ## Current stack
 
 This application use:
@@ -21,6 +26,9 @@ I began to play with React but I have not enough time to finish something usable
 use the old way with simple form.
 
 ## Users Stories
+
+User stories for this prototype. Be aware the finalized prototype has
+a pre-filled list of ingredients on the home page to kickly test the app.
 
 ### Story 1 (seed)
 

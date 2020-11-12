@@ -10,9 +10,7 @@ This is a little challange. The baseline is:
 > I'm waiting friends for dinner but I don't have time for shopping. Knowing
 > what I have in the fridge, what can I cook.
 
-<video controls width="550">
-<source src="./frigomagik_usecase.mp4" type="video/mp4">
-</video>
+<a href="https://youtu.be/tb46TmlnTT4" tag="get the video">See the video for a quick demo</a>
 
 
 ## Current stack

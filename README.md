@@ -12,6 +12,7 @@ This is a little challange. The baseline is:
 
 <a href="https://youtu.be/tb46TmlnTT4" tag="get the video">See the video for a quick demo</a>
 
+Want a live test ? Try https://frigomagik.herokuapp.com/ on Heroku.
 
 ## Current stack
 

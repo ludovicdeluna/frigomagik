@@ -1,7 +1,11 @@
 class RecipeFinderService
+  Result = Struct.new(:id, :name, :found)
+
   def can_cook_with(ingredients, pagemax: 20)
-    ingredients.
-      map { |name| "%#{name}%"}.
-      then { |list| Recipe.where.not(id: Ingredient.not_in(list).by_recipe_id).limit(pagemax) }
+    Recipe.
+      with_ingredients(ingredients).
+      limit(pagemax).
+      scoring.
+      map { |(id, name), found| Result.new(id, name, found) }
   end
 end

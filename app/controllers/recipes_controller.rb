@@ -1,8 +1,9 @@
 class RecipesController < ApplicationController
   def search
     ingredients = (params[:ingredients] || "").split(',').map(&:strip).compact
-    @recipes = RecipeFinderService.new.can_cook_with(ingredients + %w(sel poivre huile))
+    @recipes = RecipeFinderService.new.can_cook_with(ingredients)
     @ingredients = ingredients.join(", ")
+    @nbs_ingredients = ingredients.size
   end
 
   def show

@@ -13,18 +13,18 @@ ingredient_for_two_recipe_mouton:
   recipe: recipe_two_ingredients
   qte_name: "1 mouton"
 
-ingredient_for_two_recipe_courgettes:
+ingredient_for_four_recipe_courgettes:
   recipe: recipe_four_ingredients
   qte_name: "18grammes de courgettes"
 
-ingredient_for_two_recipe_mouton:
+ingredient_for_four_recipe_mouton:
   recipe: recipe_four_ingredients
   qte_name: "1 mouton"
 
-ingredient_for_two_recipe_huile:
+ingredient_for_four_recipe_huile:
   recipe: recipe_four_ingredients
   qte_name: "5cuillere a soupe d'huile"
 
-ingredient_for_two_recipe_riz:
+ingredient_for_four_recipe_riz:
   recipe: recipe_four_ingredients
   qte_name: "5grammes de ritz blanc"

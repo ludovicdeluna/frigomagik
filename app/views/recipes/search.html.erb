@@ -22,7 +22,7 @@
   <%- else -%>
     <ul>
     <%- @recipes.each do |recipe| -%>
-      <li><%= link_to(recipe.name, recipes_show_path(id: recipe.id)) %> (score: <%= "#{recipe.found} / #{@nbs_ingredients}" %>)</li>
+      <li><%= link_to(recipe.name, recipes_show_path(id: recipe.id)) %></li>
     <%- end -%>
     </ul>
   <%- end -%>
